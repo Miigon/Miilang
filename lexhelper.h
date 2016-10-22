@@ -12,7 +12,7 @@ namespace Miilang
         
         inline bool isIdentifierFirst(char ch)
         {
-            return (ch >= 'a' && ch <= 'z') || ch == '_';
+            return (ch >= 'A' && ch <= 'z') || ch == '_';
         }
         
         inline bool isIdentifier(char ch)

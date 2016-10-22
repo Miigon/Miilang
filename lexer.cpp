@@ -16,8 +16,8 @@ namespace Miilang
     
     static const std::unordered_set<std::string> Keywords
         {
-            "kyword",
-            "int",
+            "if",
+            "return",
         };
     
     Lexer::Lexer(std::string code)
@@ -137,7 +137,7 @@ namespace Miilang
                 size_t posStart = mPos - 1;
                 do
                 {
-                    // TODO: Error when more than 1 points --Miigon 16.10.1
+                    // TODO: Error when more than 1 point --Miigon 16.10.1
                     if(!(LexHelper::isNumber(ch) || ch == '.')) break;
                     ch = nextChar();
                 }
